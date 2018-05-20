@@ -32,5 +32,6 @@ define(["jquery", "cookie"], function($){
 		/* 加载尾部 */
 		$("footer").load("/html/include/footer.html");
 		$("cart").load("/html/cart.html");
+//		$("list").load("/html/list.html");
 	});
 });

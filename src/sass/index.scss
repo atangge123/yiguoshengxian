@@ -1,7 +1,164 @@
-.container {
-	width: 1002px;
-	margin: 0 auto;
-	height: 500px;
-	background: red;
-	color: #fff;
+.nav{
+	width: 100%px;
+	height:32px;
+	background: #f7f9f8;
+	.wrap{
+	    width: 1193px;
+	    height: 32px;
+	    margin: 0 auto;
+	    border: 1px solid red;
+	    .fl{
+	        list-style: none;
+	        width: 225px;
+	        height: 32px;
+	        float: left;
+	       li{
+	          color: black;
+	          height: 32px;
+	          text-align: center;
+	          font-size: 12px;
+	          line-height: 32px;
+	          float: left;
+	       }
+	       .cityadd{
+	           color:#008842;
+	           width: 111px;
+	           height: 32px;
+    	       div{
+                  float: left;
+               }
+              .city-tit{
+                  width: 63px;
+                  height: 32px;
+                  .navtb{
+                   width: 10px;
+                   height: 10px;
+                   float: right;
+                   margin-top: 12px;
+                   background:url(../imgs/header-img.png) no-repeat 1px 3px;
+               }
+              }
+	       }
+	       .cityadd:hover .navtb{
+	               background-color: #008842;
+                   background-position: -12px 3px;
+               }
+	       .cityadd:hover .city-tit{
+	           background: #008842;
+	           color: white;
+	       }
+	    }
+	    .fr{
+	        width: 502px;
+	        height: 32px;
+	        float: right;
+	        list-style: none;
+	        li{
+	            float: left;
+	            margin-left: 12px;
+	        }
+	        li a{
+	            text-decoration: none;
+	            color: black;
+	            font-size: 12px;
+	        }
+	        ._myyiguo{
+	            height: 32px;
+	            position: relative;
+	            .mytu{
+	                width: 18px;
+	                height: 16px;
+	                float: left;
+	                margin-top: 6px;
+	                background:url(../imgs/header-img.png) no-repeat -40px -1px;
+	            }
+	            .mytb{
+	               width: 10px;
+                   height: 10px;
+                   float: right;
+                   margin-top: 7px;
+                   margin-right: 11px;
+                   background:url(../imgs/header-img.png) no-repeat 1px 3px;
+	            }
+	        }
+	         ._myyiguo:hover{
+	            background-color: white;
+	            border: 1px solid green;
+                border-bottom: none;
+	         }
+	        ._myyiguo:hover .mytb{
+                  background-position: -12px 3px;
+            }
+            ._phyiguo{
+                height: 32px;
+                .phtu{
+                    width: 18px;
+                    height: 16px;
+                    float: left;
+                    margin-top: 6px;
+                    background:url(../imgs/header-img.png) no-repeat -63px -1px;
+                }
+                .phtb{
+                   width: 10px;
+                   height: 10px;
+                   float: right;
+                   margin-top: 7px;
+                   margin-right: 11px;
+                   background:url(../imgs/header-img.png) no-repeat 1px 3px;
+                }
+            }
+            ._phyiguo:hover{
+                background-color: white;
+                border: 1px solid green;
+                border-bottom: none;
+            }
+            ._phyiguo:hover .phtb{
+                background-position: -12px 3px;
+            }
+            .card{
+               
+                height: 32px;
+                .cardtu{
+                    width: 21px;
+                    height: 17px;
+                    float: left;
+                    margin-top: 6px;
+                    background:url(../imgs/header-img.png) no-repeat -147px -1px;
+                }
+            }
+            .card:hover a{
+                color: green;
+            }
+            ._login:hover a{
+                color: green;
+            }
+             ._register:hover a{
+                color: green;
+            }
+            .mobile{
+               
+                height: 32px;
+                .mobiletu{
+                    width: 21px;
+                    height: 17px;
+                    float: left;
+                    margin-top: 6px;
+                    background:url(../imgs/header-img.png) no-repeat -82px -1px;
+                }
+            }
+	    }
+	}
+	.myOrder{
+	    width: 137px;
+	    height: 400px;
+	    position: absolute;
+	    right: 426px;
+	    border: 1px solid green;
+	    border-top: none;
+	}
+}
+.ggg{
+    width: 100px;
+   height: 100px;
+   background: red;
 }

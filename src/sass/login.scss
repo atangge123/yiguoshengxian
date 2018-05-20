@@ -1,0 +1,253 @@
+.headnav{
+    width: 100%;
+    height: 87px;
+    background:#e0e0e0;
+    position: relative;
+    .ims{
+        position: absolute; 
+        top: 20px;
+        left: 197px;
+    }
+    span{
+        position: absolute;
+        color: #008842;
+        font-size: 25px;
+        left: 496px;
+        top:25px;
+    }
+}
+.main1{
+    width:100%;
+    height: 600px;
+    border: 1px solid black;
+    position: relative;
+    .imsm{
+       position: absolute;
+       left: 200px;
+       top: 63px;
+    }
+    .temlebe{
+        width: 439px;
+        height: 539px;
+        position: absolute;
+        right: 329px;
+        top:63px;
+        border: 1px solid black;
+        .sp:nth-child(1){
+            font-size:25px;
+            position: absolute;
+            top: 10px;
+            left:30px;
+        }
+        .sp1:nth-child(2){
+            font-size: 14px;
+            position: absolute;
+            right: 22px;
+            top: 10px;
+            a{
+                color:green
+            }
+        }
+        .username{
+            width: 383px;
+            height: 50px;
+            border: 1px solid  black;
+            position: absolute;
+            left: 26px;
+            top: 88px;
+            .bgpg{
+                width: 50px;
+                height: 50px;
+                float: left;
+                background: url(../imgs/2018-05-20_160604_03.jpg) no-repeat;
+            }
+            .usernames{
+                width: 333px;
+                height: 50px;
+                float: left;
+                font-size: 20px;
+                outline: none;
+                border: none;
+            }
+        }
+        
+        
+        
+        .userpasswor{
+            width: 383px;
+            height: 50px;
+            border: 1px solid  black;
+            position: absolute;
+            left: 26px;
+            top: 162px;
+            .wodpg{
+                width: 50px;
+                height: 50px;
+                float: left;
+                background: url(../imgs/2018-05-20_160604_06.jpg) no-repeat;
+            }
+            .usernamew{
+                width: 333px;
+                height: 50px;
+                float: left;
+                font-size: 20px;
+                outline: none;
+                border: none;
+            }
+        }
+        
+        
+        
+        .vtcode{
+            width: 190px;
+            height: 50px;
+            border: 1px solid  black;
+            position: absolute;
+            left: 26px;
+            top: 239px;
+            .vtpg{
+                width: 50px;
+                height: 50px;
+                float: left;
+                background: url(../imgs/2018-05-20_160604_06.jpg) no-repeat;
+            }
+            .code{
+                width: 140px;
+                height: 50px;
+                float: left;
+                font-size: 20px;
+                outline: none;
+                border: none;
+            }
+        }
+        .creatcode{
+            width:105px;
+            height: 39px;
+            position: absolute;
+            left: 217px;
+            top:239px;
+            .textcode{
+                width: 58px;
+                height: 28px;
+                outline: none;
+                border: 1px solid black;
+                font-size: 15px;
+                letter-spacing: 7px;
+            }
+            .btncode{
+                width: 51px;
+                height: 16px;
+                font-size: 14px;
+                position: absolute;
+                
+                left: 63px;
+                top: 15px;
+            }
+            .btncode:hover{
+                cursor: pointer;
+                color: green;
+            }
+        }
+         .autologon{
+            width: 383px;
+            height: 20px;
+            position: absolute;
+            left: 26px;
+            top: 315px;
+            .zilogon{
+                position: absolute;
+                left: 34px;
+            }
+            .wjpasword{
+                position: absolute;
+                right: 0px;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            .wjpasword:hover{
+                cursor:pointer;
+                color: green;
+            }
+            .wjpasword:hover a{
+                color: green;
+            }
+         }
+         .btnlogon{
+             width: 383px;
+             height: 50px;
+             position: absolute;
+             background: #008842;
+             font-size: 25px;
+             border: none;
+             left: 26px;
+             color: white;
+             top: 360px;
+         }
+         .btnlogon:hover{
+             cursor: pointer;
+             background: #45a373;
+         }
+        .disanf{
+             width: 383px;
+             height: 72px;
+             position: absolute;
+             left: 26px;
+             top: 451px;
+            
+             .sf1{
+                 width: 109px;
+                 height: 28px;
+                 display: block;
+                 
+                 position: absolute;
+                 background: url(../imgs/2018-05-20_160604_10.jpg) no-repeat 0px 0px;
+                  top: 45px;
+             }
+             .sf2{
+                 width: 109px;
+                 height: 28px;
+                 display: block;
+                
+                 background: url(../imgs/2018-05-20_160604_10.jpg) no-repeat -136px 0px;
+                 position: absolute;
+                 left: 137px;
+                 top: 45px;
+             }
+             .sf3{
+                 width: 109px;
+                 height: 28px;
+                 display: block;
+                
+                 background: url(../imgs/2018-05-20_160604_10.jpg) no-repeat -255px 0px;
+                 position: absolute;
+                 left: 272px;
+                 top: 45px;
+             }
+        }
+        .prompt{
+             width: 336px;
+             height: 39px;
+             position: absolute;
+             background: pink;
+             line-height: 39px;
+             left: 26px;
+             top: 46px;
+             padding-left: 50px;
+             display: none;
+        }
+        .promptyz{
+             width: 336px;
+             height: 39px;
+             position: absolute;
+              background: pink;
+             line-height: 39px;
+              padding-left: 50px;
+             left: 26px;
+             top: 46px;
+             display: none;
+        }
+    }
+    
+}

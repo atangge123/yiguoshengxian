@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/common.css" />
+	<link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+	<div class="headnav">
+		<img src="../imgs/logo.png" class="ims">
+		<span>登录</span>
+	</div>
+	<div class="main1">
+		<a href="#"><img src="../imgs/9288691196862353.jpg" class="imsm"></a>
+		<form class="temlebe">
+			<span class="sp">欢迎登录</span>
+			<span class="sp1">还没有账号？<a href="#">立即注册</a></span>
+			<div class="username">
+				<div class="bgpg"></div>
+				<input type="text" placeholder="邮箱/账号/已验证手机" class="usernames"/>
+			</div>
+			<div class="userpasswor">
+				<div class="wodpg"></div>
+				<input type="password" placeholder="密码" class="usernamew"/>
+			</div>
+			<div class="vtcode">
+				<div class="vtpg"></div>
+				<input type="password" placeholder="验证码" class="code"/>
+			</div>
+			<div class="creatcode">
+				<input type="text" value="1763" class="textcode"/>
+				<div class="btncode">换一张</div>
+			</div>
+			<div class="autologon">
+				<label>
+					<input type="checkbox" class="autocheck">
+					<span class="zilogon">自动登录</span>
+				</label>
+				<span class="wjpasword"><a href="#">忘记登录密码?</a></span>
+			</div>
+			<input type="submit" value="登录" class="btnlogon">
+			<div class="disanf">
+				<span>第三方登录</span>
+				<!--<a href="#"><img src="../imgs/2018-05-20_160604_10.jpg"></a>-->
+				<a href="#" class="sf1"></a>
+				<a href="#" class="sf2"></a>
+				<a href="#" class="sf3"></a>
+			</div>
+			<div class="prompt">账号或密码错误</div>
+			<div class="promptyz">验证码输入错误</div>
+		</form>
+	</div>
+	<script src="../lib/jquery/jquery-1.12.4.min.js"></script>
+	<script src="../lib/jquery-plugins/jquery.cookie.js"></script>
+	<script src="../js/login.js"></script>
+</body>
+</html>

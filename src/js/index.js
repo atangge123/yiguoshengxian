@@ -33,7 +33,19 @@ require(["config"], function(){
 			$("header").on("mouseleave","body",function(){
 				$(".myOrder").css({"display":"none"});
 			});
-
+			
+			var num=$(".ii");
+			var len=num.length;
+			var circles="";
+			var=lis="";
+			for(var i=0;i<len;i++){
+				lis+=`<li ${i==0?'style="display:block;"':''}>
+						<a href="${im}">
+						</a>
+					</li>`;
+			}
+			
+			$("#lunbotu").innerHTML=circles;
 		});
 
 	});

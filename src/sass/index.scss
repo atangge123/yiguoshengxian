@@ -6,7 +6,7 @@
 	    width: 1193px;
 	    height: 32px;
 	    margin: 0 auto;
-	    border: 1px solid red;
+	   
 	    .fl{
 	        list-style: none;
 	        width: 225px;
@@ -36,12 +36,14 @@
                    float: right;
                    margin-top: 12px;
                    background:url(../imgs/header-img.png) no-repeat 1px 3px;
+                 
                }
               }
 	       }
 	       .cityadd:hover .navtb{
 	               background-color: #008842;
-                   background-position: -12px 3px;
+                  
+                   background-position: -24px 3px;
                }
 	       .cityadd:hover .city-tit{
 	           background: #008842;
@@ -56,6 +58,8 @@
 	        li{
 	            float: left;
 	            margin-left: 12px;
+	            border: 1px solid #f7f9f8;
+	            border-bottom: none;
 	        }
 	        li a{
 	            text-decoration: none;
@@ -65,6 +69,7 @@
 	        ._myyiguo{
 	            height: 32px;
 	            position: relative;
+	           
 	            .mytu{
 	                width: 18px;
 	                height: 16px;
@@ -82,10 +87,18 @@
 	            }
 	        }
 	         ._myyiguo:hover{
+	          
 	            background-color: white;
 	            border: 1px solid green;
                 border-bottom: none;
+//              .myOrder{
+//                  display: block;
+//              }
 	         }
+	         
+
+	         
+	        
 	        ._myyiguo:hover .mytb{
                   background-position: -12px 3px;
             }
@@ -107,14 +120,24 @@
                    background:url(../imgs/header-img.png) no-repeat 1px 3px;
                 }
             }
+             
+             
+             
             ._phyiguo:hover{
                 background-color: white;
                 border: 1px solid green;
                 border-bottom: none;
-            }
-            ._phyiguo:hover .phtb{
+                .phtb{
                 background-position: -12px 3px;
+                }
+//              .pherwm{
+//                  display: block;
+//              }
             }
+           
+            
+            
+            
             .card{
                
                 height: 32px;
@@ -146,19 +169,159 @@
                     background:url(../imgs/header-img.png) no-repeat -82px -1px;
                 }
             }
+            .mobile:hover a{
+                color: green;
+            }
 	    }
 	}
 	.myOrder{
 	    width: 137px;
-	    height: 400px;
+	    height: 200px;
 	    position: absolute;
-	    right: 426px;
+	    right: 432px;
+	    top: 33px;
 	    border: 1px solid green;
 	    border-top: none;
+	    list-style: none;
+	    z-index: 99; 
+//	    display: none;
+	     background: white;
+	    li{
+	       height:25px;
+	       line-height: 25px;
+	       margin-left: 15px;
+	        a{
+	          text-decoration: none;
+	          font-size: 12px;
+	          color: #000000;
+	        }
+	    }
+	    li:hover a{
+	        color: green;
+	    }
+	    li:nth-child(2) .couponyj{
+	      display: inline-block;
+	      font-size: 20px;
+	      position: absolute;
+	      top: 28px;
+	      left: 83px;
+	      width: 20px;
+	      height: 20px;
+	      background: green;
+	      text-align: center;
+	      border-radius: 5px;
+	      cursor:pointer;
+	    }
+	}
+	.pherwm{
+	    width: 137px;
+        height: 310px;
+        position: absolute;
+        right: 321px;
+        top: 33;
+        border: 1px solid green;
+        border-top: none;
+        list-style: none;
+        z-index: 99;
+        display: none;
+        background: white;
+        li{
+            text-align: center;
+            font-size: 12px;
+            margin-top: 3px;
+        }
 	}
 }
-.ggg{
-    width: 100px;
-   height: 100px;
-   background: red;
+.searchss{
+    width: 100%;
+    height: 80px;
+    background: #e0e0e0;
+   .searchbox{
+       width: 1193px;
+        height: 80px;
+        position: relative;
+        margin: 0 auto;
+        
+        img{
+            margin-top: 15px;
+        }
+        .searchcx{
+            width:526px;
+            height: 30px;
+            position: absolute;
+            top: 15px;
+            left: 290px;
+            border: 1px solid green;
+            input:nth-child(1){
+                width: 421px;
+                height: 30px;
+                float: left;
+                padding-left:20px ;
+                border: none;
+                outline: none;
+            }
+            input:nth-child(2){
+                width: 85px;
+                height: 30px;
+                line-height: 30px;
+                background:#008842;
+                color: white;
+                float: left;
+                text-align: center;
+                border: none;
+            }
+        }
+        .goodslist{
+            width: 400px;
+            height: 15px;
+            position: absolute;
+            top: 52px;
+            left: 280px;
+            list-style: none;
+            li{
+                float: left;
+                margin-left: 10px;
+               
+                vertical-align: top;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    font-size: 12px;
+                }
+            }
+            
+        }
+        #spcart{
+            width:170px;
+            position: absolute;
+            right: 32px;
+            top: 15px;
+            height: 40px;
+            background: white;
+            border: 1px solid green;
+            
+            #goodsnum{
+                width: 33px;
+                height: 25px;
+                position: absolute;
+                line-height: 25px;
+                color: #00888e;
+                left: 50px;
+                font-size: 12px;
+                font-weight: 600;
+                top: 4px;
+                text-align: center;
+                background: url(../imgs/header-img.png) no-repeat -108px 8px;
+            }
+            #price{
+                 color: #00888e;
+                 position: absolute;
+                 top: 3px;
+                 left: 93px;
+                 font-size: 25px;
+                 
+            }
+        }
+   }
 }
+

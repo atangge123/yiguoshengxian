@@ -2,36 +2,53 @@
     width: 100%;
     height: 87px;
     background:#e0e0e0;
-    position: relative;
-    .ims{
+    .headnav2{
+        width: 1392px;
+        height: 87px;
+        position: relative;
+        margin:0 auto;
+        .ims{
         position: absolute; 
-        top: 20px;
-        left: 197px;
+        top:20%;
     }
     span{
         position: absolute;
         color: #008842;
         font-size: 25px;
-        left: 496px;
-        top:25px;
+        left:18%;
+        top:20%;
     }
+    }
+   
 }
+
+
+
+
+
 .main1{
     width:100%;
     height: 600px;
     border: 1px solid black;
-    position: relative;
-    .imsm{
-       position: absolute;
-       left: 200px;
-       top: 63px;
+    
+    .maingg{
+        width: 1392px;
+        height: 600px;
+        position: relative;
+        margin:0 auto;
+       .imsm{
+       float: left;
+       margin-top: 60px;
     }
-    .temlebe{
+        
+        
+        
+       .temlebe{
         width: 439px;
         height: 539px;
         position: absolute;
-        right: 329px;
-        top:63px;
+        right: 0;
+        top: 60px;
         border: 1px solid black;
         .sp:nth-child(1){
             font-size:25px;
@@ -251,3 +268,10 @@
     }
     
 }
+        
+    }
+    
+    
+    
+   
+    

@@ -12,10 +12,12 @@ $(function(){
 	var curre={name:"123",passwords:"456"};
 	$.cookie.json=true;
 	$.cookie("curret",curre,{expires:7,path:"/"});
-	var _current=$.cookie("curret")||[];
 	console.log(_current);
-	
-	$(".btnlogon").on("click",function(){
+	var _current=$.cookie("curret")||[];
+	$(".btnlogon").on("click",function(e){
+		e=e||event;
+		e.preventDefault();
+		
 		
 		var code=$(".code").val();
 		
@@ -34,11 +36,11 @@ $(function(){
 		else if(curret.name!==_current.name&&curret.passwords!==_current.passwords){
 			$(".prompt").css({"display":"block"});
 			$(".usernames").val("");
-			$(".usernamew").val();
+			$(".usernamew").val("");
 		}else{
 			$(".prompt").css({"display":"none"});
 			$(".promptyz").css({"display":"none"});
-			window.location.href="https://login.yiguo.com/FindPwd";
+			window.location.href="index.html";
 		}
 		var rundom=Math.floor(Math.random()*8999)+1000;
 		$(".textcode").val(rundom);

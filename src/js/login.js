@@ -1,4 +1,8 @@
-$(function(){
+require(["config"], function(){
+	// 依赖配置中各短名称的模块
+	require(["jquery","load","cookie"], function($){
+		
+		$(function(){
 	var rundom=Math.floor(Math.random()*8999)+1000;
 	$(".textcode").val(rundom);
 	
@@ -49,3 +53,9 @@ $(function(){
 	
 	
 });
+		
+	});
+});
+
+
+

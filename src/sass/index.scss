@@ -8,6 +8,9 @@
 	    height: 32px;
 	    margin: 0 auto;
 	   
+	   
+	   
+	   
 	    .fl{
 	        list-style: none;
 	        width: 225px;
@@ -583,7 +586,9 @@
            }
        }
       }
-    .f1{
+      
+      
+    .floor{
         width: 1193px;
         height: 526px;
         border: 1px solid black;
@@ -615,3 +620,173 @@
            }
        }
     }
+    
+    
+    
+     .floor{
+        width: 1193px;
+        height: 526px;
+        border: 1px solid black;
+        position: relative;
+        background: #f7f8f8;
+        margin: 0 auto;
+       .fle2{
+           width: 133px;
+           height: 37px;
+            background: url(../imgs/F2.jpg) no-repeat;
+           background-color: #f7f8f8;
+           span{
+               float:right;
+               margin-top: 20px;
+           }
+       }
+       .fr2{
+           list-style: none;
+           position: absolute;
+           top:5px;
+           right: 0;
+           li{
+               float: left;
+               border-right: 1px solid black;
+               margin-left: 10px;
+           }
+           li:nth-child(3){
+               border-right: none;
+           }
+       }
+    }
+    
+    
+    .floor{
+        width: 1193px;
+        height: 526px;
+        border: 1px solid black;
+        position: relative;
+        background: #f7f8f8;
+        margin: 0 auto;
+       .fle3{
+           width: 133px;
+           height: 51px;
+            background: url(../imgs/F3.png) no-repeat;
+           background-color: #f7f8f8;
+           span{
+               float:right;
+               margin-top: 20px;
+           }
+       }
+       .fr3{
+           list-style: none;
+           position: absolute;
+           top:5px;
+           right: 0;
+           li{
+               float: left;
+               border-right: 1px solid black;
+               margin-left: 10px;
+           }
+           li:nth-child(3){
+               border-right: none;
+           }
+       }
+    }
+   .menu{
+                width: 50px;
+                height: 300px;
+                list-style: none;
+                position: fixed;
+                left: 110px;
+                bottom: 100px;
+                
+            }
+            .menu li{
+                width: 50px;
+                height: 50px;
+                border: 1px solid red;
+                text-align: center;
+                line-height: 50px;
+                background: black;
+                color: red;
+            }
+            .menu .curr{
+                background: white;
+            }
+    .fddh{
+        height:102px;
+        background: #e0e0e0;
+        .fddhbox{
+            width:1193px;
+            height: 102px;
+            margin: 0 auto;
+          
+            list-style:none;
+            li{
+                width:227px;
+                height: 75px;;
+                float: left;
+                position: relative;
+                margin-left: 52px;
+                margin-top: 14px;
+               .xiao{
+                   width: 150px;
+                   height: 75px;
+                   border-left: 1px solid black;
+                   float: right;
+                    b{
+                    color: green;
+                    float: left;
+                    margin-left: 10px;
+                }
+                span{
+                    float: left;
+                    margin-left: 10px;
+                }
+                
+               }
+               .xies1{
+                    width: 43px;
+                    height: 44px;
+                    position: absolute;
+                    
+                    left: 18px;
+                    top: 15px;
+                    background:url(../imgs/footer_service_icon.png) no-repeat;
+                  
+                }
+               .xies2{
+                    width: 43px;
+                    height: 44px;
+                    position: absolute;
+                  
+                    left: 18px;
+                    top: 15px;
+                    background:url(../imgs/footer_service_icon.png) no-repeat 0px -42px;
+                }
+                .xies3{
+                    width: 43px;
+                    height: 44px;
+                    position: absolute;
+                  
+                    left: 18px;
+                    top: 15px;
+                    background:url(../imgs/footer_service_icon.png) no-repeat 0px -84px;
+                }
+                .xies4{
+                    width: 43px;
+                    height: 44px;
+                    position: absolute;
+                   
+                    left: 18px;
+                    top: 15px;
+                    background:url(../imgs/footer_service_icon.png) no-repeat 0px -126px;
+                }
+            }
+        }
+    }
+    
+    .finalchapter{
+        width: 1193px;
+        height: 414px;
+        border: 1px solid red;
+        margin: 0 auto;
+    }
+

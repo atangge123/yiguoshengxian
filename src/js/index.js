@@ -119,8 +119,80 @@ require(["config"], function(){
 				$("#goodslist").css({"display":"none"});
 			});
 			
-			
 //		width:1193
+
+
+
+
+			
 		});
+		
+		$(function(){
+			var fl=$(".floor");
+			var lis=$(".menu").children();
+			var a=[1,2,3,,4,5];
+			var _fltop=Math.floor($(fl[0]).offset().top);
+			var winHeight=$(window).height();
+			
+			
+			//鼠标滚动事件变换楼层
+			$(window).scroll(function(){
+				var _scrollTop = document.documentElement.scrollTop;
+				if(_scrollTop>_fltop-winHeight/2){
+					$(".menu").css({"display":"block"});
+				}else{
+					$(".menu").css({"display":"none"});
+				}
+				Array.from(fl).forEach(function(floor,index){
+					var _top=$(floor).offset().top;
+//					console.log(_top);
+					
+					if(_scrollTop>=_top-winHeight/2){
+						
+						for(var i=0;i<lis.length;i++){
+							
+//							$(lis[i]).removeClass()
+							lis[i].className="";
+//							console.log(lis[i]+"ll");
+						}
+						$(lis[index]).addClass("curr");
+//							lis[index].className="curr";
+//						console.log($(lis[index])+"ldd");
+							
+					}
+				});
+			});
+			
+			
+			
+			
+			$(".menu").on("click",function(e){
+				var _index=$(e.target).index();
+				console.log(_index);
+				//—top为终点
+				var tp=Math.floor($(fl[_index]).offset().top);
+				console.log(tp);
+				//从当前滚动距离开始
+				var starts=document.documentElement.scrollTop;
+				var ranges=starts - tp;
+				var speed=3000;
+//				console.log(starts);
+//				console.log(_top);
+				var tm=+new Date();
+				var timer=setInterval(function(){
+					var tmz=Math.min(+new Date()-tm,speed);
+					
+					
+					var luc=tmz*ranges/speed+starts;
+					
+					document.documentElement.scrollTop=luc;
+					if(tmz===speed){
+						clearInterval(timer);
+					}
+				},1000/60);
+			});
+//			
+		});
+		
 	});
 });

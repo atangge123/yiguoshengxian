@@ -2,7 +2,9 @@ require(["config"], function(){
 	// 依赖配置中各短名称的模块
 	require(["jquery","load","cookie"], function($){
 		
-		$(function(){
+	$(function(){
+	var suserw=0;
+	var regizy=0;
 	var rundom=Math.floor(Math.random()*8999)+1000;
 	$(".textcode").val(rundom);
 	
@@ -13,45 +15,47 @@ require(["config"], function(){
 	});
 	
 	
-	var curre={name:"123",passwords:"456"};
+	
 	$.cookie.json=true;
-	$.cookie("curret",curre,{expires:7,path:"/"});
-	console.log(_current);
+	
 	var _current=$.cookie("curret")||[];
+	
+	console.log(_current);
 	$(".btnlogon").on("click",function(e){
 		e=e||event;
 		e.preventDefault();
-		
-		
 		var code=$(".code").val();
 		
 		var username=$(".usernames").val();
 		var userword=$(".usernamew").val();
 		var curret={name:username,passwords:userword};
-		console.log(curret.name);
+		
 //		&&curret.name===_current.name&&curret.passwords===_current.passwords
 		
 		if(code!=$(".textcode").val()){
 			$(".promptyz").css({"display":"block"});
 			$(".code").val("");
 //			alert("验证码输入错误");
+		}else{
+			$(".promptyz").css({"display":"none"});
+			regizy=1;
 		}
 		
-		else if(curret.name!==_current.name&&curret.passwords!==_current.passwords){
+		if(curret.name!==_current.name||curret.passwords!==_current.passwords){
 			$(".prompt").css({"display":"block"});
 			$(".usernames").val("");
 			$(".usernamew").val("");
 		}else{
 			$(".prompt").css({"display":"none"});
-			$(".promptyz").css({"display":"none"});
-			window.location.href="index.html";
+			suserw=1;
+			
+		}
+		if(regizy==1&&suserw==1){
+			window.location.href="/";
 		}
 		var rundom=Math.floor(Math.random()*8999)+1000;
 		$(".textcode").val(rundom);
 	});
-	
-	
-	
 });
 		
 	});

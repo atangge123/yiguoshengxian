@@ -130,7 +130,7 @@ require(["config"], function(){
 		$(function(){
 			var fl=$(".floor");
 			var lis=$(".menu").children();
-			var a=[1,2,3,,4,5];
+			var a=[1,2,3,4,5];
 			var _fltop=Math.floor($(fl[0]).offset().top);
 			var winHeight=$(window).height();
 			
@@ -147,7 +147,7 @@ require(["config"], function(){
 					var _top=$(floor).offset().top;
 //					console.log(_top);
 					
-					if(_scrollTop>=_top-winHeight/2){
+					if(_scrollTop>=_top){
 						
 						for(var i=0;i<lis.length;i++){
 							
@@ -174,10 +174,10 @@ require(["config"], function(){
 				console.log(tp);
 				//从当前滚动距离开始
 				var starts=document.documentElement.scrollTop;
-				var ranges=starts - tp;
+				var ranges=tp-starts;
 				var speed=3000;
-//				console.log(starts);
-//				console.log(_top);
+				
+			
 				var tm=+new Date();
 				var timer=setInterval(function(){
 					var tmz=Math.min(+new Date()-tm,speed);
@@ -186,7 +186,7 @@ require(["config"], function(){
 					var luc=tmz*ranges/speed+starts;
 					
 					document.documentElement.scrollTop=luc;
-					if(tmz===speed){
+					if(tmz==speed){
 						clearInterval(timer);
 					}
 				},1000/60);
